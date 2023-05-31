@@ -107,21 +107,77 @@ figure{
 }
 
 /* Mobile */
-@media (300px <= width <= 750px){
+@media (200px <= width <= 1080px){
     .cards-container {
         display: flex;
         flex-direction: column;
-        margin-left: 60px;
-        margin-right: 65px;
+        margin: 0 50%;
     }
     .product-pic {
         width: 200px;
     }
     .btn-container {
-        position: absolute;
         width: 40px;
     }
     .btn-container-class {
         padding-bottom: 20%;
+    }
+}
+@media (750px <= width <= 1050px){
+    .cards-container {
+        margin: 0 35%;
+    }
+    .product-pic {
+        width: 400px;
+    }
+}
+@media (500px <= width < 750px){
+    .cards-container {
+        margin: 0 35%;
+    }
+    .product-pic {
+        width: 300px;
+    }
+}
+@media (310px <= width < 500px){
+    nav {
+        gap: 10px;
+    }
+    .cards-container {
+        margin: 0 35%;
+    }
+    .product-pic {
+        width: 200px;
+    }
+    .btn-container {
+        width: 25px;
+    }
+    .btn-container-class {
+        padding-bottom: 1%;
+    }
+    .btn-container img {
+        width: 35px;
+        height: 35px;
+    }
+    #title {
+        margin: 0 15%;
+    }
+}
+@media (width < 310px){
+    nav {
+        gap: 5px;
+    }
+    .product-pic {
+        width: 100px;
+    }
+    .btn-container {
+        width: 30px;
+    }
+    .btn-container img {
+        width: 40px;
+        height: 40px;
+    }
+    #title {
+        margin: 0 20%;
     }
 }
